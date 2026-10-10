@@ -15,6 +15,74 @@ const projects = [
     featured: true
   },
   {
+    id: 28,
+    title: { fr: "Marchal Électricité", en: "Marchal Électricité" },
+    type: "client",
+    description: { fr: "Site vitrine pour un électricien à Tours : présentation des prestations, galerie de chantiers et formulaire de demande de devis.", en: "Showcase site for an electrician in Tours: services, project gallery and quote request form." },
+    tech: [
+      { name: "HTML", icon: "fab fa-html5" },
+      { name: "CSS", icon: "fab fa-css3-alt" },
+      { name: "JavaScript", icon: "fab fa-js-square" }
+    ],
+    img: "assets/img/marchal.jpg",
+    link: "https://saradev-ops.github.io/marchal/",
+    featured: false
+  },
+  {
+    id: 29,
+    title: { fr: "Plâtrerie Delmas", en: "Plâtrerie Delmas" },
+    type: "client",
+    description: { fr: "Site vitrine pour un plaquiste à Mâcon : cloisons, doublages, plafonds, bandes et enduits. Mise en avant des réalisations et devis gratuit.", en: "Showcase site for a drywall contractor in Mâcon, with portfolio and free quote." },
+    tech: [
+      { name: "HTML", icon: "fab fa-html5" },
+      { name: "CSS", icon: "fab fa-css3-alt" },
+      { name: "JavaScript", icon: "fab fa-js-square" }
+    ],
+    img: "assets/img/platrerie.jpg",
+    link: "https://saradev-ops.github.io/Platrerie-Delmas/",
+    featured: false
+  },
+  {
+    id: 30,
+    title: { fr: "Bréval Chauffage", en: "Bréval Chauffage" },
+    type: "client",
+    description: { fr: "Site vitrine pour un chauffagiste RGE à Lyon : installation, entretien et dépannage de chaudières, pompes à chaleur et planchers chauffants.", en: "Showcase site for a certified heating engineer in Lyon." },
+    tech: [
+      { name: "HTML", icon: "fab fa-html5" },
+      { name: "CSS", icon: "fab fa-css3-alt" },
+      { name: "JavaScript", icon: "fab fa-js-square" }
+    ],
+    img: "assets/img/breval.jpg",
+    link: "https://saradev-ops.github.io/Breval-Chauffage/",
+    featured: false
+  },
+  {
+    id: 31,
+    title: { fr: "Ferrand Maçonnerie", en: "Ferrand Maçonnerie" },
+    type: "client",
+    description: { fr: "Site vitrine pour une entreprise familiale de maçonnerie près de Mâcon : rénovation de pierre, dalles, enduits et murs de clôture.", en: "Showcase site for a family masonry business near Mâcon." },
+    tech: [
+      { name: "HTML", icon: "fab fa-html5" },
+      { name: "CSS", icon: "fab fa-css3-alt" }
+    ],
+    img: "assets/img/ferrand.jpg",
+    link: "https://saradev-ops.github.io/Ferrand-Maconnerie/",
+    featured: false
+  },
+  {
+    id: 32,
+    title: { fr: "Berthier Couverture", en: "Berthier Couverture" },
+    type: "client",
+    description: { fr: "Site vitrine pour un couvreur-zingueur à Cholet : rénovation de toiture, réparation de fuites, zinguerie, charpente et démoussage.", en: "Showcase site for a roofer in Cholet." },
+    tech: [
+      { name: "HTML", icon: "fab fa-html5" },
+      { name: "CSS", icon: "fab fa-css3-alt" }
+    ],
+    img: "assets/img/berthier.jpg",
+    link: "https://saradev-ops.github.io/Berthier-Couverture/",
+    featured: false
+  },
+  {
     id: 18,
     title: { fr: "Chiffrio", en: "Chiffrio" },
     type: "personnel",
