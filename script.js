@@ -25,7 +25,7 @@ const projects = [
       { name: "JavaScript", icon: "fab fa-js-square" }
     ],
     img: "assets/img/marchal.jpg",
-    link: "https://saradev-ops.github.io/marchal/",
+    link: "https://ramwebb.github.io/marchal/",
     featured: false
   },
   {
@@ -39,7 +39,7 @@ const projects = [
       { name: "JavaScript", icon: "fab fa-js-square" }
     ],
     img: "assets/img/platrerie.jpg",
-    link: "https://saradev-ops.github.io/Platrerie-Delmas/",
+    link: "https://ramwebb.github.io/Platrerie-Delmas/",
     featured: false
   },
   {
@@ -53,7 +53,7 @@ const projects = [
       { name: "JavaScript", icon: "fab fa-js-square" }
     ],
     img: "assets/img/breval.jpg",
-    link: "https://saradev-ops.github.io/Breval-Chauffage/",
+    link: "https://ramwebb.github.io/Breval-Chauffage/",
     featured: false
   },
   {
@@ -66,7 +66,7 @@ const projects = [
       { name: "CSS", icon: "fab fa-css3-alt" }
     ],
     img: "assets/img/ferrand.jpg",
-    link: "https://saradev-ops.github.io/Ferrand-Maconnerie/",
+    link: "https://ramwebb.github.io/Ferrand-Maconnerie/",
     featured: false
   },
   {
@@ -79,7 +79,7 @@ const projects = [
       { name: "CSS", icon: "fab fa-css3-alt" }
     ],
     img: "assets/img/berthier.jpg",
-    link: "https://saradev-ops.github.io/Berthier-Couverture/",
+    link: "https://ramwebb.github.io/Berthier-Couverture/",
     featured: false
   },
   {

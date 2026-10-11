@@ -1015,7 +1015,17 @@ html {
 
   .portfolio-grid,
   .design-grid {
-    grid-auto-rows: 420px;
+    grid-auto-rows: auto;
+  }
+
+  .hero-image,
+  .project-card,
+  .design-card {
+    padding: 0;
+  }
+
+  .hero-image {
+    height: 320px;
   }
 
   .project-image,
@@ -1039,11 +1049,6 @@ html {
 
   .section-title {
     font-size: 40px;
-  }
-
-  .portfolio-grid,
-  .design-grid {
-    grid-auto-rows: 400px;
   }
 
   .project-image,
