@@ -488,6 +488,18 @@ html {
   transform: scale(1.05);
 }
 
+.project-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 6px 14px;
+  background: var(--primary);
+  color: var(--dark);
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 999px;
+}
+
 .project-overlay {
   position: absolute;
   top: 0;
@@ -999,6 +1011,23 @@ html {
   .service-card.small {
     grid-column: span 1;
     grid-row: span 1;
+  }
+
+  .service-card.small {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .service-icon.small-icon {
+    width: 80px;
+    height: 80px;
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+
+  .service-card.small h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
   }
 
   .hero-bento {

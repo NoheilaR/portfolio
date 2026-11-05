@@ -1,6 +1,21 @@
 // === Projets ===
 const projects = [
   {
+    id: 33,
+    title: { fr: "Stampik", en: "Stampik" },
+    type: "client",
+    description: { fr: "Cartes de fidélité digitales pour commerçants : à points ou à visites, ajoutées à Apple Wallet ou Google Wallet en un scan, sans application à installer.", en: "Digital loyalty cards for shops, added to Apple Wallet or Google Wallet with one scan, no app required." },
+    tech: [
+      { name: "Vue.js", icon: "fab fa-vuejs" },
+      { name: "Nuxt", icon: "fas fa-layer-group" },
+      { name: "JavaScript", icon: "fab fa-js-square" }
+    ],
+    img: "assets/img/stampik.jpg",
+    link: "https://stampik.fr/",
+    featured: true,
+    badge: "Dernier projet"
+  },
+  {
     id: 27,
     title: { fr: "Configurateur de devis Villemin", en: "Villemin Quote Configurator" },
     type: "client",
@@ -259,6 +274,7 @@ function renderProjects() {
           ? `<video muted loop playsinline><source src="${project.link}" type="video/mp4"></video>`
           : `<img src="${project.img}" alt="${project.title.fr}" loading="lazy">`
         }
+        ${project.badge ? `<span class="project-badge">${project.badge}</span>` : ''}
         <div class="project-overlay">
           ${project.link ? `<a href="${project.link}" target="_blank" rel="noopener" class="project-link" aria-label="Visiter le site"><i class="${linkIcon}"></i></a>` : ''}
           <button class="project-link modal-trigger" data-id="${project.id}" aria-label="Voir les détails"><i class="fas fa-info-circle"></i></button>
