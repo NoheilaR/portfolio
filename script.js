@@ -121,7 +121,7 @@ const projects = [
       { name: "Elementor", icon: "fa-brands fa-elementor" }
     ],
     img: "assets/img/wyp.png",
-    link: "https://writeyourpath.org/",
+    link: "https://wordpress-eil0gcdwn0dgwsb1ynxdlt7c.57.131.147.51.sslip.io/",
     featured: false
   },
   {
