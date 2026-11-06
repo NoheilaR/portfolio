@@ -12,6 +12,8 @@ const projects = [
     ],
     img: "assets/img/stampik.jpg",
     link: "https://stampik.fr/",
+    demoVideo: "assets/video/stampik-demo.mp4",
+    demoCredit: "Vidéo de démo : motion design réalisé par mes soins.",
     featured: true,
     badge: "Dernier projet"
   },
@@ -325,9 +327,12 @@ function renderProjects() {
       <div class="modal-content">
         <span class="close-modal" aria-label="Fermer">&times;</span>
         <h2>${project.title.fr}</h2>
-        ${isVideo
-          ? `<video controls style="width:100%; max-height:400px; border-radius:20px; margin:20px 0;"><source src="${project.link}" type="video/mp4"></video>`
-          : `<img src="${project.img}" alt="${project.title.fr}">`
+        ${project.demoVideo
+          ? `<video class="modal-video-vertical" controls playsinline preload="metadata"><source src="${project.demoVideo}" type="video/mp4"></video>
+             <p class="modal-video-credit">${project.demoCredit}</p>`
+          : isVideo
+            ? `<video controls style="width:100%; max-height:400px; border-radius:20px; margin:20px 0;"><source src="${project.link}" type="video/mp4"></video>`
+            : `<img src="${project.img}" alt="${project.title.fr}">`
         }
         <p>${project.description.fr}</p>
         <div class="modal-tech">
@@ -425,6 +430,14 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Gestion des modals
+  const closeModals = () => {
+    document.querySelectorAll('.modal').forEach(m => {
+      m.style.display = 'none';
+      m.querySelectorAll('video').forEach(v => v.pause());
+    });
+    document.body.style.overflow = 'auto';
+  };
+
   document.addEventListener('click', e => {
     // Ouvrir modal
     if (e.target.closest('.modal-trigger')) {
@@ -438,20 +451,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Fermer modal
     if (e.target.classList.contains('close-modal') || e.target.classList.contains('modal')) {
-      document.querySelectorAll('.modal').forEach(m => {
-        m.style.display = 'none';
-      });
-      document.body.style.overflow = 'auto';
+      closeModals();
     }
   });
 
   // Fermer modal avec ESC
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') {
-      document.querySelectorAll('.modal').forEach(m => {
-        m.style.display = 'none';
-      });
-      document.body.style.overflow = 'auto';
+      closeModals();
     }
   });
 

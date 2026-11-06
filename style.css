@@ -906,6 +906,8 @@ html {
   border-radius: 30px;
   position: relative;
   animation: modalIn 0.4s ease;
+  max-height: calc(100vh - 40px);
+  overflow-y: auto;
 }
 
 @keyframes modalIn {
@@ -946,6 +948,25 @@ html {
   object-fit: cover;
   border-radius: 20px;
   margin: 20px 0;
+}
+
+.modal-content .modal-video-vertical {
+  display: block;
+  width: auto;
+  height: 65vh;
+  max-width: 100%;
+  max-height: none;
+  aspect-ratio: 9 / 16;
+  object-fit: contain;
+  background: #000;
+  margin: 20px auto 10px;
+}
+
+.modal-video-credit {
+  text-align: center;
+  font-size: 14px;
+  color: var(--gray);
+  margin-bottom: 20px;
 }
 
 .modal-tech {
