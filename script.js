@@ -58,6 +58,20 @@ const projects = [
     featured: false
   },
   {
+    id: 34,
+    title: { fr: "Mot pour Mot", en: "Mot pour Mot" },
+    type: "personnel",
+    description: { fr: "Party game de mots en 2v2 et en temps réel : chaque équipe fait deviner des mots sans prononcer les mots interdits, avec des parties synchronisées par WebSocket.", en: "Real-time 2v2 word party game: teams get each other to guess words while avoiding forbidden ones, with games synced over WebSocket." },
+    tech: [
+      { name: "React.js", icon: "fab fa-react" },
+      { name: "WebSocket", icon: "fas fa-plug" },
+      { name: "Socket.IO", icon: "fas fa-bolt" }
+    ],
+    img: "assets/img/motpourmot.jpg",
+    link: "https://jeu-des-mots.noheila-dev.fr/",
+    featured: false
+  },
+  {
     id: 30,
     title: { fr: "Bréval Chauffage", en: "Bréval Chauffage" },
     type: "client",
